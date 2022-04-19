@@ -1,0 +1,12 @@
+.intro-air {
+    background-image: url('../../../assets/img/divisions/air/air.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media (max-width: 500px) {
+    .intro-air {
+        background-image: url('../../../assets/img/divisions/air/air-mobile.webp');
+    }
+}

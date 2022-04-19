@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/swiper/swiper-bundle.min.css';
+@import 'animate.css';
+
+/* TEXT */
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.50) !important;
+}
+
+
+/* COLOR PRIMARIO #0075B6*/
+
+.bg-primario {
+    background: #0075B6 !important;
+}
+
+.btn-primario {
+    background: #0075B6 !important;
+}
+
+.btn-primario:hover,
+.btn-primario:active,
+.btn-primario::after {
+    background: #0067A1;
+}
+
+.text-primario {
+    color: #0075B6 !important;
+}
+
+
+/* COLOR SEGUNDARIO  #FF6836 */
+
+.bg-segundario {
+    background: #FF6836 !important;
+}
+
+.btn-segundario {
+    background: #FF6836 !important;
+}
+
+.btn-segundario:hover,
+.btn-segundario:active,
+.btn-segundario::after {
+    background: #D43F0E !important;
+}
+
+.text-segundario {
+    color: #FF6836 !important;
+}
+
+
+/* COLOR LIGERO #F6F9FC */
+
+.bg-ligero {
+    background: #F6F9FC !important;
+}
+
+.btn-ligero {
+    background: #F6F9FC !important;
+}
+
+.btn-ligero:hover,
+.btn-ligero:active,
+.btn-ligero::after {
+    background: #E3EDF6 !important;
+}

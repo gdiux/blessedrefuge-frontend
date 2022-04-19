@@ -1,0 +1,108 @@
+<footer class="bg-primario pt-5 px-md-4 w-100" style="position: fixed; height: auto; bottom: 0;">
+    <div class="container">
+        <div class="row pb-2">
+            <div class="col-md-4 col-sm-6">
+                <div class="widget widget-links widget-light pb-2 mb-4">
+                    <h3 class="widget-title text-light">Pages</h3>
+                    <ul class="widget-list">
+                        <li routerLinkActive="active" class="widget-list-item">
+                            <a routerLink="/home" class="widget-list-link">Home</a>
+                        </li>
+                        <li routerLinkActive="active" class="widget-list-item">
+                            <a routerLink="/about" class="widget-list-link">About</a>
+                        </li>
+                        <li routerLinkActive="active" class="widget-list-item">
+                            <a routerLink="/donate" class="widget-list-link">Donate</a>
+                        </li>
+                        <li routerLinkActive="active" class="widget-list-item">
+                            <a routerLink="/contacts" class="widget-list-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="widget widget-links widget-light pb-2 mb-4">
+                    <h3 class="widget-title text-light">Policy and Privacy</h3>
+                    <ul class="widget-list">
+                        <li routerLinkActive="active" class="widget-list-item">
+                            <a href="#" class="widget-list-link">Privacy</a>
+                        </li>
+                        <li routerLinkActive="active" class="widget-list-item">
+                            <a href="#" class="widget-list-link">Terms of use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="widget widget-links widget-light pb-2 mb-4">
+                    <h3 class="widget-title text-light">Social Network</h3>
+                    <ul class="widget-list">
+                        <li class="widget-list-item d-flex align-items-center">
+                            <a class="btn-social bs-light  bs-facebook ms-2 mb-2" href="#" target="_blank">
+                                <i class="ci-facebook"></i>
+                            </a>
+                            <a class="text-decoration-none" href="#" target="_blank">
+                                <span class="text-white-75 ms-2">facebook</span>
+                            </a>
+                        </li>
+                        <li class="widget-list-item d-flex align-items-center">
+                            <a class="btn-social bs-light bs-instagram ms-2 mb-2" href="#" target="_blank">
+                                <i class="ci-instagram"></i>
+                            </a>
+                            <a class="text-decoration-none" href="#" target="_blank">
+                                <span class="text-white-75 ms-2">instagram</span>
+                            </a>
+                        </li>
+                        <li class="widget-list-item d-flex align-items-center">
+                            <a class="btn-social bs-light bs-twitter ms-2 mb-2" href="#" target="_blank">
+                                <i class="ci-twitter"></i>
+                            </a>
+                            <a class="text-decoration-none" href="#" target="_blank">
+                                <span class="text-white-75 ms-2">twitter</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="widget pb-2 mb-4">
+                    <h3 class="widget-title text-light pb-1">Address</h3>
+                    <div class="widget">
+                        <ul class="widget-list">
+                            <li class="d-flex">
+                                <i class="ci-location fs-lg mt-2 text-white-75"></i>
+                                <div class="ps-3">
+                                    <span class="fs-ms text-white-50">Find us</span>
+                                    <h5 class="d-block text-white-75 fw-normal fs-sm">769, Industrial Dr, West Chicago, IL 60185, USA</h5>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="ci-phone fs-lg mt-2 text-white-75"></i>
+                                <div class="ps-3">
+                                    <span class="fs-ms text-white-50">Call us</span>
+                                    <a class="d-block text-white-75 fw-normal fs-sm" href="tel:+184725276533">+1 (23) 456 789</a>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <i class="ci-mail fs-lg mt-2 text-white-75"></i>
+                                <div class="ps-3">
+                                    <span class="fs-ms text-white-50">Write us</span>
+                                    <a class="d-block text-white-75 fw-normal fs-sm" href="mailto:email@example.com">email@example.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-end">
+                <button type="button" (click)="upTop()" class="btn btn-light rounded-pill btn-icon ms-auto" style="position: fixed; right: 2.5rem;">
+                    <i class="ci-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="pt-2 bg-primario">
+        <div class="container">
+            <div class="pb-4 fs-xs text-white-75 text-center text-md-start">© {{ year | date: 'yyyy'}} All rights reserved. blessed refuge foundation</div>
+        </div>
+    </div>
+</footer>
