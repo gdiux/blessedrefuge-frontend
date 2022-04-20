@@ -20,14 +20,20 @@ export class DonateComponent implements OnInit {
    * PAYPAL
   ========================================================================== */
   public payPalConfig ? : IPayPalConfig;
+  public showSuccess!: boolean;
+  public showCancel!: boolean;
+  public showError!: boolean;
 
   private initConfig(): void {
     
     this.payPalConfig = {
+        
         currency: 'USD',
         clientId: 'AY-LthScYS7e_6uvDmUdcm09Jz2dh36agQXHvEaU8GQHuCLpdX_i3dLRzZCcbOJYQfbF6FZ-R7GCA397',
+        
         createOrderOnClient: (data) => < ICreateOrderRequest > {
             intent: 'CAPTURE',
+
             purchase_units: [{
                 amount: {
                     currency_code: 'USD',
@@ -66,23 +72,24 @@ export class DonateComponent implements OnInit {
 
         },
 
-        // onClientAuthorization: (data) => {
-        //     console.log('onClientAuthorization - you should probably inform your server about completed transaction at this point', data);
-        //     this.showSuccess = true;
-        // },
-        // onCancel: (data, actions) => {
-        //     console.log('OnCancel', data, actions);
-        //     this.showCancel = true;
+        onClientAuthorization: (data) => {
+            console.log('onClientAuthorization - you should probably inform your server about completed transaction at this point', data);
+            this.showSuccess = true;
+        },
 
-        // },
-        // onError: err => {
-        //     console.log('OnError', err);
-        //     this.showError = true;
-        // },
-        // onClick: (data, actions) => {
-        //     console.log('onClick', data, actions);
-        //     this.resetStatus();
-        // }
+        onCancel: (data, actions) => {
+            console.log('OnCancel', data, actions);
+            this.showCancel = true;
+        },
+
+        onError: err => {
+            console.log('OnError', err);
+            this.showError = true;
+        },
+
+        onClick: (data, actions) => {
+            console.log('onClick', data, actions);
+        }
 
     };
 }
