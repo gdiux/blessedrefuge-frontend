@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { SwiperModule } from 'swiper/angular';
+import { NgxPayPalModule } from 'ngx-paypal';
 
 // COMPONENTS
 import { HomeComponent } from './home/home.component';
@@ -12,6 +14,7 @@ import { Section2Component } from './home/components/section2/section2.component
 import { CallActionComponent } from './home/components/call-action/call-action.component';
 import { TestimonialsComponent } from './home/components/testimonials/testimonials.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { DonateComponent } from './donate/donate.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +26,18 @@ import { ContactsComponent } from './contacts/contacts.component';
     CallActionComponent,
     TestimonialsComponent,
     ContactsComponent,
+    DonateComponent,
   ],
   exports: [
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    DonateComponent
   ],
   imports: [
     CommonModule,
-    SwiperModule
+    SwiperModule,
+    RouterModule,
+    NgxPayPalModule
   ]
 })
 export class PagesModule { }
