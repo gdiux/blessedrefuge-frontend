@@ -7,6 +7,7 @@ import { SwiperModule } from 'swiper/angular';
 import { AirComponent } from './air/air.component';
 import { MedicalComponent } from './medical/medical.component';
 import { TechnologyComponent } from './technology/technology.component';
+import { FarmingComponent } from './farming/farming.component';
 
 
 
@@ -14,11 +15,14 @@ import { TechnologyComponent } from './technology/technology.component';
   declarations: [
     AirComponent,
     MedicalComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    FarmingComponent
   ],
   exports: [
     AirComponent,
-    MedicalComponent
+    MedicalComponent,
+    TechnologyComponent,
+    FarmingComponent
   ],
   imports: [
     CommonModule,

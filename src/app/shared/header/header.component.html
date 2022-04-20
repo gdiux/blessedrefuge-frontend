@@ -56,24 +56,18 @@
                     <li class="nav-item dropdown" routerLinkActive="active">
                         <a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown">Divisions</a>
                         <ul class="dropdown-menu">
-                            <li>
+                            <li routerLinkActive="active">
                                 <a class="dropdown-item" [routerLink]="['/divisions/air']">Aerea</a>
                             </li>
-                            <li>
+                            <li routerLinkActive="active">
                                 <a class="dropdown-item" [routerLink]="['/divisions/medical']">Medical</a>
                             </li>
-                            <li class="dropdown">
-                                <a class="dropdown-item dropdown-toggle" [routerLink]="['/land']" data-bs-toggle="dropdown">Terrestre</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action link</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    <li><a class="dropdown-item" href="#">Yet another link</a></li>
-                                </ul>
+                            <li routerLinkActive="active">
+                                <a class="dropdown-item" [routerLink]="['/divisions/technology']">Technology</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li routerLinkActive="active">
+                                <a class="dropdown-item" [routerLink]="['/divisions/farming']">Farming</a>
+                            </li>
                         </ul>
                     </li>
 

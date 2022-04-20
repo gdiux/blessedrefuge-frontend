@@ -1,0 +1,12 @@
+.intro-technology {
+    background-image: url('../../../assets/img/divisions/technology/technology.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media (max-width: 500px) {
+    .intro-technology {
+        background-image: url('../../../assets/img/divisions/technology/technology-mobile.webp');
+    }
+}

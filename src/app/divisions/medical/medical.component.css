@@ -1,0 +1,12 @@
+.intro-medical {
+    background-image: url('../../../assets/img/divisions/medical/medical.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media (max-width: 500px) {
+    .intro-medical {
+        background-image: url('../../../assets/img/divisions/medical/medical-mobile.webp');
+    }
+}

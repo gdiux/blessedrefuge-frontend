@@ -5,11 +5,11 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 @Component({
-  selector: 'app-technology',
-  templateUrl: './technology.component.html',
-  styleUrls: ['./technology.component.css']
+  selector: 'app-farming',
+  templateUrl: './farming.component.html',
+  styleUrls: ['./farming.component.css']
 })
-export class TechnologyComponent implements OnInit {
+export class FarmingComponent implements OnInit {
 
   constructor() { }
 
