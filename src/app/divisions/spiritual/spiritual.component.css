@@ -1,0 +1,12 @@
+.intro-spiritual {
+    background-image: url('../../../assets/img/divisions/spiritual/spiritual.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+
+@media (max-width: 500px) {
+    .intro-spiritual {
+        background-image: url('../../../assets/img/divisions/spiritual/spiritual-mobile.webp');
+    }
+}

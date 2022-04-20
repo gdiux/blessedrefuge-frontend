@@ -8,6 +8,7 @@ import { AirComponent } from './air/air.component';
 import { MedicalComponent } from './medical/medical.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { FarmingComponent } from './farming/farming.component';
+import { SpiritualComponent } from './spiritual/spiritual.component';
 
 
 
@@ -16,13 +17,15 @@ import { FarmingComponent } from './farming/farming.component';
     AirComponent,
     MedicalComponent,
     TechnologyComponent,
-    FarmingComponent
+    FarmingComponent,
+    SpiritualComponent
   ],
   exports: [
     AirComponent,
     MedicalComponent,
     TechnologyComponent,
-    FarmingComponent
+    FarmingComponent,
+    SpiritualComponent
   ],
   imports: [
     CommonModule,
