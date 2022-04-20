@@ -44,16 +44,7 @@ export class DonateComponent implements OnInit {
                             value: '9.99'
                         }
                     }
-                },
-                items: [{
-                    name: 'Enterprise Subscription',
-                    quantity: '1',
-                    category: 'DIGITAL_GOODS',
-                    unit_amount: {
-                        currency_code: 'USD',
-                        value: '9.99',
-                    },
-                }]
+                }
             }]
         },
         advanced: {

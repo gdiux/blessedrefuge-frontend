@@ -2,23 +2,115 @@
 
     <div class="intro-donate d-flex align-items-center justify-content-center">
         <div class="text-center">
-            <h2 class="text-white display-2">
+            <h2 class="text-darker display-2">
                 Donations
             </h2>
-            <p class="text-white-75 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="text-darker fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </div>
 
-    <div class="mx-auto col-md-6 col-sm-10 my-5">
+    <div class="container mx-auto my-5">
 
-        <div class="card border-0 shadow">
-            <div class="card-body">
-                <h5 class="card-title">Paypal</h5>
-                <p class="card-text fs-sm text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, rem!</p>
+        <div class="d-flex flex-wrap">
 
-                <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+            <div class="col-md-8 px-4 border-end border-1">
+
+                <h3 class="h3 text-darker">Donation of items</h3>
+
+                <!-- Basic accordion -->
+                <div class="accordion" id="accordionExample">
+
+                    <!-- Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Items List #1</button>
+                        </h2>
+                        <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.</div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Items List #2</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">This is the second item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.</div>
+                        </div>
+                    </div>
+
+                    <!-- Item -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Items List #3</button>
+                        </h2>
+                        <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INFO ADDRESS -->
+                <div class="row mx-auto py-4">
+
+                    <div class="col-auto mb-grid-gutter">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <i class="ci-location h3 mt-2 mb-4 text-primary"></i>
+                                <h3 class="h6 mb-2">Main store address</h3>
+                                <p class="fs-sm text-muted">396 Lillian Blvd, Holbrook, NY 11741, USA</p>
+                                <a class="fs-sm" routerLink="/contacts">
+                                Click to see map
+                                <i class="ci-arrow-right align-middle ms-1"></i>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto mb-grid-gutter">
+                        <div class="card border-0 shadow">
+                            <div class="card-body text-center">
+                                <i class="ci-phone h3 mt-2 mb-4 text-primary"></i>
+                                <h3 class="h6 mb-3">Phone numbers</h3>
+                                <ul class="list-unstyled fs-sm mb-0">
+                                    <li>
+                                        <span class="text-muted me-1">Customer service:</span>
+                                        <a class="nav-link-style" href="tel:+108044357260">+1 (080) 44 357 260</a>
+                                    </li>
+                                    <li>
+                                        <span class="text-muted me-1">Tech support:</span>
+                                        <a class="nav-link-style" href="tel:+100331697720">+1 00 33 169 7720</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+
+            <div class="col-md-4 mx-auto px-4">
+
+                <h3 class="text-segundario h3">For monetary donations</h3>
+
+                <div class="card border-0 shadow">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0 py-2">Donate with Paypal</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text fs-sm text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, rem!</p>
+
+                        <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
+
 
     </div>
 
