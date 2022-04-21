@@ -10,9 +10,9 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { DivisionsRoutingModule } from './divisions/divisions.routing';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent, data: { title: 'Home' } },
-  { path: '**', component: NopagefoundComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full', data: { titulo: 'Home' } },
+  { path: 'home', component: HomeComponent, data: { titulo: 'Home' } },
+  { path: '**', component: NopagefoundComponent, data: { titulo: 'Not Page Found' } },
 ];
 
 @NgModule({

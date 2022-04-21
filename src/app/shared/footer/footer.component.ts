@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class FooterComponent implements OnInit {
-
+  public cookie: boolean = false;
   
   constructor() { }
   
   ngOnInit(): void {  
+
+    // COOKIES
+    let cokies = localStorage.getItem('cookies');
+
+    if (!cokies) {
+      this.cookie = false;
+    }else{
+      this.cookie = true;
+    }
 
     // PARALLAX FOOTER
     let footer:any = document.querySelector('footer');
@@ -44,6 +53,13 @@ export class FooterComponent implements OnInit {
 
     }, 15);
     
+  }
+  /**=======================================================================
+  * ACCEPT COOKIES
+  ======================================================================== */
+  acceptCokies(){
+    localStorage.setItem('cookies', 'true');
+    this.cookie = true;
   }
   
   // FIN DE LA CLASE

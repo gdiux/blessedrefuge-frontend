@@ -1,4 +1,13 @@
+<div *ngIf="!cookie" class="container-fluid py-2 bg-dark opacity-75 fixed-bottom" style=" z-index: 50;">
+    <div class="mx-auto">
+        <p class="text-break text-white mb-0 fw-normal text-center">
+            This website uses its own and third-party cookies to offer you a better experience and service.<br> By browsing or using our services, you accept our use of cookies. <button type="button" (click)="acceptCokies()" class="btn btn-sm btn-outline-light rounded-pill">I agree</button></p>
+    </div>
+</div>
+
 <footer class="bg-primario pt-5 px-md-4 w-100" style="position: fixed; height: auto; bottom: 0;">
+
+
     <div class="container">
         <div class="row pb-2">
             <div class="col-md-4 col-sm-6">
