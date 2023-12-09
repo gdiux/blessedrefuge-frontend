@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 // SWIPER
-import SwiperCore, { SwiperOptions } from 'swiper';
+import SwiperCore, { SwiperOptions, EffectCards, Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
+
+// install Swiper modules
+SwiperCore.use([EffectCards, Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 @Component({
   selector: 'app-section1',
@@ -20,8 +23,13 @@ export class Section1Component implements OnInit {
    * SWIPER
   ===================================================================== */
   config: SwiperOptions = {
-    slidesPerView: 2,
-    spaceBetween: 50,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    "speed": 650,
+    "autoplay": {
+      "delay": 6000,
+      "disableOnInteraction": false
+    },
     navigation: false,
     breakpoints: {
       100: {
@@ -39,8 +47,8 @@ export class Section1Component implements OnInit {
       },
       // when window width is >= 640px
       640: {
-        slidesPerView: 2,
-        spaceBetween: 40
+        slidesPerView: 3,
+        spaceBetween: 30
       }
     }
   };
